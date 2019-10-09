@@ -45,7 +45,7 @@ header::before{
 	color: #3498db;
 	width: 60%;
 	margin: 0 20%;
-	margin-top: 5%;
+	margin-top: 6%;
 	border-radius: 10px;
 	-webkit-box-shadow: 0px 20px 17px -14px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 20px 17px -14px rgba(0,0,0,0.75);
@@ -54,6 +54,10 @@ header::before{
 #first-cont img{
 	width: 250px;
 	border-radius: 2em;
+}
+#first-cont img:hover{
+	background: #2980b9;
+	cursor: pointer;
 	-webkit-box-shadow: 0px 20px 17px -14px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 20px 17px -14px rgba(0,0,0,0.75);
 	box-shadow: 0px 20px 17px -14px rgba(0,0,0,0.75);
@@ -179,10 +183,94 @@ header::before{
 	width: 70%;
 	padding-top: 2%;
 	padding-right: 3%;
-}
+}/*
 .content-five img{
 	width: 100%;
 	-webkit-box-shadow: 0px 5px 13px -4px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 5px 13px -4px rgba(0,0,0,0.75);
 	box-shadow: 0px 5px 13px -4px rgba(0,0,0,0.75);
+}*/
+.content-five iframe{
+	-webkit-box-shadow: 0px 5px 13px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 5px 13px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 5px 13px -4px rgba(0,0,0,0.75);
+}
+#six-cont{
+	width: 90%;
+	color: #3498db;
+	margin: auto;
+}
+.six-title{
+	float: left;
+	width: 50%;
+	word-wrap: break-word;
+}
+.six-title p:first-child{
+	font-size: 40px;
+	margin-bottom: 0;
+}
+.six-title p:nth-child(2){
+	font-size: 70px;
+	margin-top: 0;
+}
+.content-six{
+	float: right;
+	width: 40%;
+	height: 300px;
+	margin: auto;
+	background: #3498db;
+	color: #ffffff;
+	font-size: 20px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 5px 13px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 5px 13px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 5px 13px -4px rgba(0,0,0,0.75);
+}
+.content-six input{
+	width: 100%;
+	height: 20px;
+	border: none;
+	border-radius: 5px;
+}
+.content-six textarea{
+	width: 100%;
+	height: 100px;
+	border: none;
+	border-radius: 5px;
+	resize: none;
+}
+.content-six table{
+	width: 100%;
+	padding: 2%;
+}
+.content-six button{
+	width: 100px;
+	padding: 1%;
+	border: none;
+	border-radius: 5px;
+	font-size: 15px;
+}
+footer{
+	width: 100%;
+	background: #3498db;
+	display: inline-flex;
+	margin-top: 50px;
+	color: #ffffff;
+	font-size: 20px;
+}
+footer .foot-kiri{
+	width: 40%;
+	padding-left: 15px;
+	padding-top: 10px;
+}
+footer .foot-kanan{
+	width: 50%;
+	text-align: right;
+	padding: 10px;
+}
+footer .foot-kanan a{
+	margin-left: 10px;
+}
+footer .foot-kanan img{
+	width: 50px;
 }
