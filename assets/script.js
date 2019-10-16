@@ -1,12 +1,17 @@
-function kirimBoongan() {
-	alert("Terima kasih!\n Kami akan segera merespon pesan anda!");
+(function() {
+'use strict';
+window.addEventListener('load', function() {
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+var forms = document.getElementsByClassName('needs-validation');
+// Loop over them and prevent submission
+var validation = Array.prototype.filter.call(forms, function(form) {
+form.addEventListener('submit', function(event) {
+if (form.checkValidity() === false) {
+event.preventDefault();
+event.stopPropagation();
 }
-function bersinar(x) {
-	x.style.backgroundColor = "#f39c12";
-}
-function normal(x) {
-	x.style.backgroundColor = "#ffffff";
-}
-function hover(x){
-	x.style.backgroundColor = "#f39c12";
-}
+form.classList.add('was-validated');
+}, false);
+});
+}, false);
+})();
